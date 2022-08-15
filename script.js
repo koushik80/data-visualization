@@ -100,3 +100,20 @@ const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
       .append("div")
       .attr("class","bar")
 */
+
+/*
+// Update the Height of an Element Dynamically
+
+// Challlenge 8: Add the style() method to the code in the editor to set the height property for each element. Use a callback function to return the value of the data point with the string px added to it.
+
+const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
+
+    d3.select("body").selectAll("div")
+      .data(dataset)
+      .enter()
+      .append("div")
+      .attr("class", "bar")
+      //.style("height", (d) => `${d}px`)
+      .style("height", (d) => d + 'px')
+*/
+
