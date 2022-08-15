@@ -86,3 +86,17 @@ d3.select("body").selectAll("h2")
       })
 
       */
+
+/*
+// Add Classes with D3
+
+// Challlenge 7: Add the attr() method to the code in the editor and put a class of bar on the div elements.
+
+const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
+
+    d3.select("body").selectAll("div")
+      .data(dataset)
+      .enter()
+      .append("div")
+      .attr("class","bar")
+*/
