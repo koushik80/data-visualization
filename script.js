@@ -114,6 +114,25 @@ const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
       .append("div")
       .attr("class", "bar")
       //.style("height", (d) => `${d}px`)
-      .style("height", (d) => d + 'px')
+      .style("height", (d) => (d + 'px'))
+*/
+
+/*
+// Change the Presentation of a Bar Chart
+
+// Challlenge 9: First, add a margin of 2px to the bar class in the style tag. Next, change the callback function in the style() method so it returns a value 10 times the original data value (plus the px).
+
+//Note: Multiplying each data point by the same constant only alters the scale. It's like zooming in, and it doesn't change the meaning of the underlying data.
+
+const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
+
+    d3.select("body").selectAll("div")
+      .data(dataset)
+      .enter()
+      .append("div")
+      .attr("class", "bar")
+      .style("height", (d) => `${d * 10}px`)
+      //.style("height", (d) => (d * 10 + "px"))
+
 */
 
