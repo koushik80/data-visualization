@@ -6,6 +6,10 @@
     background-color: blue;
   }
 
+  .bar:hover {
+    fill: brown;
+  }
+
   svg {
     background-color: pink;
   }
