@@ -234,3 +234,30 @@ const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
        .attr("width", 25)
        .attr("height", 100);
 */
+
+/*
+// Dynamically Change the Height of Each Bar
+
+// Challlenge 14: Change the callback function for the height attribute to return the data value times 3.
+
+// Note: Remember that multiplying all data points by the same constant scales the data (like zooming in). It helps to see the differences between bar values in this example.
+
+const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
+
+    const w = 500;
+    const h = 100;
+
+    const svg = d3.select("body")
+                  .append("svg")
+                  .attr("width", w)
+                  .attr("height", h);
+
+svg.selectAll("rect")
+      .data(dataset)
+      .enter()
+      .append("rect")
+      .attr("x", (d, i) => i * 30)
+      .attr("y", 0)
+      .attr("width", 25)
+      .attr("height", (d, i) => d * 3)
+*/
