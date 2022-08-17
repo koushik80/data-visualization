@@ -1,4 +1,7 @@
 
+//import d3 from 'd3-webpack-loader';
+
+
 /*
 // Add Document Elements with D3
 // Challlenge 1: Use the select method to select the body tag in the document. Then append an h1 tag to it, and add the text Data Visualization with D3 into the h1 element.
@@ -175,4 +178,30 @@ const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
                   .attr("x", 0)
                   .attr("y", 0)
 
+*/
+
+
+/*
+// Create a Bar for Each Data Point in the Set
+
+// Challlenge 12: Use the data(), enter(), and append() methods to create and append a rect for each item in dataset. The bars should display all on top of each other; this will be fixed in the next challenge.
+
+const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
+
+    const w = 500;
+    const h = 100;
+
+    const svg = d3.select("body")
+                  .append("svg")
+                  .attr("width", w)
+                  .attr("height", h);
+
+svg.selectAll("rect")
+       .data(dataset)
+       .enter()
+       .append("rect")
+       .attr("x", 0)
+       .attr("y", 0)
+       .attr("width", 25)
+       .attr("height", 100);
 */
