@@ -5,3 +5,7 @@
     display: inline-block;
     background-color: blue;
   }
+
+  svg {
+    background-color: pink;
+  }
