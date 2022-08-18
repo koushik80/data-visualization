@@ -580,3 +580,16 @@ const dataset = [
        .attr("y", (d, i) => h - d[1])
        .text((d) => (d[0] + ', ' + d[1]))
 */
+
+/*
+// Create a Linear Scale with D3
+
+// Challlenge 24: Change the scale variable to create a linear scale. Then set the output variable to the scale called with an input argument of 50.
+
+const scale = d3.scaleLinear();
+    const output = scale(50);
+
+    d3.select("body")
+      .append("h2")
+      .text(output);
+*/
