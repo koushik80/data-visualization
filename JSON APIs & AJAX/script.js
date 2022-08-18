@@ -189,3 +189,32 @@ if (navigator.geolocation){
   });
 }
 */
+
+/*
+// Post Data with the JavaScript XMLHttpRequest Method
+
+// Challenge 10: Update the code so it makes a POST request to the API endpoint. Then type your name in the input field and click Send Message. Your AJAX function should replace Reply from Server will be here. with data from the server. Format the response to display your name appended with the text loves cats.
+
+document.addEventListener('DOMContentLoaded', function(){
+    document.getElementById('sendMessage').onclick = function(){
+
+      const userName = document.getElementById('name').value;
+      const url = 'https://jsonplaceholder.typicode.com/posts';
+      // Add your code below this line
+      const xhr = new XMLHttpRequest();
+      xhr.open('POST', url, true);
+      xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 201){
+           const serverResponse = JSON.parse(xhr.response);
+           document.getElementsByClassName('message')[0].textContent = serverResponse.userName + serverResponse.suffix;
+  }
+};
+const body = JSON.stringify({ userName: userName, suffix: ' loves cats!' });
+xhr.send(body);
+
+      // Add your code above this line
+    };
+  });
+
+*/
