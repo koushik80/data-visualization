@@ -177,3 +177,15 @@ document.addEventListener('DOMContentLoaded', function(){
      };
   });
   */
+
+  /*
+// Get Geolocation Data to Find A User's GPS Coordinates
+
+// Challenge 9: Add the example code inside the script tags to check a user's current location and insert it into the HTML.
+
+if (navigator.geolocation){
+  navigator.geolocation.getCurrentPosition(function(position) {
+    document.getElementById('data').innerHTML="latitude: " + position.coords.latitude + "<br>longitude: " + position.coords.longitude;
+  });
+}
+*/
