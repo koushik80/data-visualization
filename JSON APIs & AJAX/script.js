@@ -25,3 +25,23 @@ document.getElementsByClassName('message')[0].textContent="Here is the message";
     }
   });
 */
+
+/*
+//Get JSON with the JavaScript XMLHttpRequest Method
+
+// Challenge 3: Update the code to create and send a GET request to the freeCodeCamp Cat Photo API. Then click the Get Message button. Your AJAX function will replace the The message will go here text with the raw JSON output from the API.
+
+document.addEventListener('DOMContentLoaded', function(){
+document.getElementById('getMessage').onclick = function () {
+      // Add your code below this line
+    const req = new XMLHttpRequest();
+    req.open("GET",'/json/cats.json',true);
+    req.send();
+    req.onload = function () {
+      const json = JSON.parse(req.responseText);
+      document.getElementsByClassName('message')[0].innerHTML = JSON.stringify(json);
+};
+      // Add your code above this line
+    };
+  });
+*/
