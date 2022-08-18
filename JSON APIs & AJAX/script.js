@@ -88,3 +88,34 @@ document.addEventListener('DOMContentLoaded', function(){
     };
   });
 */
+
+/*
+// Convert JSON Data to HTML
+
+// Challenge 6: Add a forEach method to loop over the JSON data and create the HTML elements to display it.
+
+// Note: For this challenge, you need to add new HTML elements to the page, so you cannot rely on textContent. Instead, you need to use innerHTML, which can make a site vulnerable to cross-site scripting attacks.
+
+document.addEventListener('DOMContentLoaded', function(){
+    document.getElementById('getMessage').onclick = function(){
+      const req = new XMLHttpRequest();
+      req.open("GET",'/json/cats.json',true);
+      req.send();
+      req.onload = function(){
+        const json = JSON.parse(req.responseText);
+        let html = "";
+        // Add your code below this line
+        json.forEach(function(val) {
+          const keys = Object.keys(val);
+          html += "<div class = 'cat'>";
+          keys.forEach(function(key) {
+            html += "<strong>" + key + "</strong>: " + val[key] + "<br>";
+          });
+          html += "</div><br>";
+        });
+        // Add your code above this line
+        document.getElementsByClassName('message')[0].innerHTML = html;
+      };
+    };
+  });
+*/
