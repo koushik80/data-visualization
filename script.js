@@ -597,7 +597,7 @@ const scale = d3.scaleLinear();
 /*
 // Set a Domain and a Range on a Scale
 
-// Challlenge: 25: Create a scale and set its domain to [250, 500] and range to [10, 150].
+// Challlenge 25: Create a scale and set its domain to [250, 500] and range to [10, 150].
 // Note: You can chain the domain() and range() methods onto the scale variable.
 
 const scale = d3.scaleLinear();
@@ -608,4 +608,19 @@ const output = scale(50);
     d3.select("body")
       .append("h2")
       .text(output);
+*/
+
+/*
+// Use the d3.max and d3.min Functions to Find Minimum and Maximum Values in a Dataset
+
+// Challlenge 26: The positionData array holds sub arrays of x, y, and z coordinates. Use a D3 method to find the maximum value of the z coordinate (the third value) from the arrays and save it in the output variable.
+
+const positionData = [[1, 7, -4],[6, 3, 8],[2, 9, 3]]
+
+const output = d3.max(positionData, (d) => d[2]);
+
+    d3.select("body")
+      .append("h2")
+      .text(output)
+
 */
