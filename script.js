@@ -593,3 +593,19 @@ const scale = d3.scaleLinear();
       .append("h2")
       .text(output);
 */
+
+/*
+// Set a Domain and a Range on a Scale
+
+// Challlenge: 25: Create a scale and set its domain to [250, 500] and range to [10, 150].
+// Note: You can chain the domain() and range() methods onto the scale variable.
+
+const scale = d3.scaleLinear();
+    scale.domain([250, 500]);
+    scale.range([10, 150]);
+
+const output = scale(50);
+    d3.select("body")
+      .append("h2")
+      .text(output);
+*/
